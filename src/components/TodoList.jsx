@@ -5,6 +5,7 @@ import { completdTodo } from '../redux/action';
 export default function TodoList() {
   const state = useReduxState();
   const dispatch = useReduxDispatch();
+  console.log(state);
 
   const todo = state.todos.map((todo, index) => (
     <li key={index}>
